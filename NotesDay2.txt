@@ -1,0 +1,37 @@
+Runner
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="folder")--------->it will execut all the feature files in the folder
+@CucumberOptions(features="folder/file1.feature")--------->it will execut file1.feature
+
+@CucumberOptions(glue={"packagename"})- it will search for the step defs in the packagename
+but if not no glue is mentioned it will search for the step defs in the package of runner.
+
+----------------------------------------------------
+Gherkin
+
+Given
+When
+Then
+And
+But
+Background
+-----------------------------------------------
+Step defs
+
+^ - begining of sentence
+$ - end of sentence
+/d - single digit
+/d+ - more than one digit
+/"([^/"]*)/" - anything in double quotes
+(//w+) - for words without double quotes
+(dog|cat) - ORING 
+
+
+@Hook("^ ------------()--------------$")
+public void mymethod(int a)
+{
+
+}
+
+REg exp---------> didnt passes the parameter to the method --------->arbity mismatch exception
